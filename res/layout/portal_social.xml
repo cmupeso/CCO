@@ -1,0 +1,189 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="#eeeeee"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="left"
+            android:layout_margin="0dp"
+            android:layout_weight="0.10"
+            android:background="@null"
+            android:gravity="left"
+            android:padding="2dp"
+            android:src="@drawable/logo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+    	<TextView
+    	    android:id="@+id/textView1"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignLeft="@+id/linearLayout1"
+    	    android:layout_below="@+id/linearLayout1"
+    	    android:paddingLeft="20dp"
+    	    android:text="COURSE TITLE"
+    	    android:textStyle="bold" />
+        
+    	<TextView
+    	    android:id="@+id/textView1"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignLeft="@+id/linearLayout1"
+    	    android:layout_below="@+id/linearLayout1"
+    	    android:text="Please find your subject from the list below and select the appropriate option." />
+
+    </LinearLayout>
+
+
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:padding="20dp" >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+            <TextView 
+                android:text="Course Paper One (CP0223)"/>
+        </TableRow>
+
+        <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:paddingRight="10dp"
+                    android:layout_gravity="right"
+                    android:text="View" />
+
+                <TextView
+                    android:layout_gravity="right"
+                    android:text="Download " />
+                
+                </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView 
+                android:text="Course Paper Twelve (CP423)"/>
+        </TableRow>
+
+        <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:paddingRight="10dp"
+                    android:layout_gravity="right"
+                    android:text="View" />
+
+                <TextView
+                    android:layout_gravity="right"
+                    android:text="Download " />
+                
+                </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+                    <TextView 
+                android:text="Course Paper Seven (CP0193)"/>
+        </TableRow>
+
+                <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:paddingRight="10dp"
+                    android:layout_gravity="right"
+                    android:text="View" />
+
+                <TextView
+                    android:layout_gravity="right"
+                    android:text="Download " />
+                
+                </TableRow>
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+                    <TextView 
+                android:text="Course Paper Eight (CP523)"/>
+        </TableRow>   
+	
+        <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:paddingRight="10dp"
+                    android:layout_gravity="right"
+                    android:text="View" />
+
+                <TextView
+                    android:layout_gravity="right"
+                    android:text="Download " />
+                
+                </TableRow>
+        
+		
+</TableLayout>
+
+
+</LinearLayout>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_vertical"
+	    android:orientation="vertical" >
+
+		<TextView
+		    android:id="@+id/developers"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center_horizontal"
+		    android:padding="20dp"
+		    android:text="@string/Developers"
+		    android:textAppearance="?android:attr/textAppearanceSmall"
+		    android:textStyle="italic" />
+
+	</LinearLayout>
+</LinearLayout>
+	

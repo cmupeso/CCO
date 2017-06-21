@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:orientation="vertical" >
+
+	<RelativeLayout 
+		        android:layout_centerHorizontal="true"
+        		android:gravity="center_horizontal" 
+		        android:id="@+id/titlebar"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content" 
+		        android:background="@drawable/border_layout1">
+
+		        <ImageView
+		            android:id="@+id/logo"
+		            android:layout_width="40dp"
+		            android:layout_height="40dp"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:src="@drawable/logo_mini" 
+		            android:scaleType="fitXY"/>
+		        
+		        <ImageButton 
+		            android:id="@+id/home"
+		            android:layout_width="30dp"
+		            android:layout_height="30dp"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="5dp"
+		            android:background="@null"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/icon_home"/>
+		        
+		</RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/titlebar"
+        android:padding="10dp" >
+
+        <TextView
+    	    android:id="@+id/appName"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_below="@+id/titlebar"
+    	    android:paddingLeft="20dp"
+    	    android:text="Past Paper Portal"
+    	    android:textColor="#920303"
+    	    android:textStyle="italic"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+    	<TextView
+    	    android:id="@+id/text1"
+    	    android:layout_width="fill_parent"
+    	    android:paddingTop="20dp"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignLeft="@+id/linearLayout1"
+    	    android:layout_below="@+id/linearLayout1"
+    	    android:text="Please find your subject from the list below and select the appropriate option." />
+    	<TextView
+    	    android:id="@+id/cell1"
+    	    android:layout_width="fill_parent"
+    	    android:paddingLeft="15dp"
+    	    android:paddingTop="10dp"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignLeft="@+id/linearLayout1"
+    	    android:layout_below="@+id/linearLayout1"
+    	    android:text="Cell: +260-955-439294" />
+    	<TextView
+    	    android:id="@+id/cell2"
+    	    android:layout_width="fill_parent"
+    	    android:paddingTop="5dp"
+    	    android:paddingLeft="15dp"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignLeft="@+id/linearLayout1"
+    	    android:layout_below="@+id/linearLayout1"
+    	    android:text="Cell: +260-977-439294" />
+		<TextView
+    	    android:id="@+id/webaddress"
+    	    android:layout_width="fill_parent"
+    	    android:paddingTop="5dp"
+    	    android:paddingLeft="15dp"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignLeft="@+id/linearLayout1"
+    	    android:layout_below="@+id/linearLayout1"
+    	    android:text="Web: www.ventekmedia.com" />
+
+	</LinearLayout>
+
+	<TextView
+	    android:id="@+id/developers"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:gravity="center_horizontal"
+	    android:padding="10dp"
+	    android:text="@string/Developers"
+	    android:textAppearance="?android:attr/textAppearanceSmall"
+	    android:textStyle="italic" />
+
+</RelativeLayout>
+	

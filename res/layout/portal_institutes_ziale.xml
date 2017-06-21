@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+        <RelativeLayout 
+		        android:layout_centerHorizontal="true"
+        		android:gravity="center_horizontal" 
+		        android:id="@+id/titlebar"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content" 
+		        android:background="@drawable/border_layout1">
+
+		        <ImageView
+		            android:id="@+id/logo"
+		            android:layout_width="40dp"
+		            android:layout_height="40dp"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:src="@drawable/logo_mini" 
+		            android:scaleType="fitXY"/>
+		        
+		        <ImageButton 
+		            android:id="@+id/home"
+		            android:layout_width="30dp"
+		            android:layout_height="30dp"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="5dp"
+		            android:background="@null"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/icon_home"/>
+		        
+		        <ImageButton 
+		            android:id="@+id/institutes"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_toLeftOf="@+id/home"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="5dp"
+		            android:background="@null"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/icon_institutes"/>
+		        
+		        </RelativeLayout>
+    
+    <ScrollView 
+	    android:padding="10dp"
+        android:layout_below="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+	    <LinearLayout
+	        android:orientation="vertical"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" >
+	
+		    <Button
+		        android:id="@+id/yr2016"
+		        style="?android:attr/buttonStyleSmall"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/linearLayout1"
+		        android:layout_below="@+id/linearLayout1"
+		        android:text="2016" />
+		    
+		    <Button
+		        android:id="@+id/yr2015"
+		        style="?android:attr/buttonStyleSmall"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/linearLayout1"
+		        android:layout_below="@+id/yr2016"
+		        android:text="2015" />
+		
+		    <Button
+		        android:id="@+id/yr2014"
+		        style="?android:attr/buttonStyleSmall"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/linearLayout1"
+		        android:layout_below="@+id/yr2015"
+		        android:text="2014" />
+		
+		    <Button
+		        android:id="@+id/yr2013"
+		        style="?android:attr/buttonStyleSmall"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignRight="@+id/linearLayout1"
+		        android:layout_below="@+id/yr2014"
+		        android:text="2013" />
+		
+		    <Button
+		        android:id="@+id/yr2012"
+		        style="?android:attr/buttonStyleSmall"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/linearLayout1"
+		        android:layout_below="@+id/yr2013"
+		        android:text="2012" />
+
+		    </LinearLayout>
+	
+	</ScrollView>
+    
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="#eeeeee"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="left"
+            android:layout_margin="0dp"
+            android:layout_weight="0.10"
+            android:background="@null"
+            android:gravity="left"
+            android:padding="2dp"
+            android:src="@drawable/logo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/linearLayout1"
+        android:padding="10dp" >
+
+        <TextView
+    	    android:id="@+id/textView1"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignLeft="@+id/linearLayout1"
+    	    android:layout_below="@+id/linearLayout1"
+    	    android:paddingLeft="20dp"
+    	    android:text="Past Paper Portal"
+    	    android:textColor="#920303"
+    	    android:textStyle="italic"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+    	<TextView
+    	    android:id="@+id/textView1"
+    	    android:layout_width="fill_parent"
+    	    android:paddingTop="20dp"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignLeft="@+id/linearLayout1"
+    	    android:layout_below="@+id/linearLayout1"
+    	    android:text="Please find your subject from the list below and select the appropriate option." />
+
+    </LinearLayout>
+
+	<TextView
+	    android:id="@+id/developers"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:gravity="center_horizontal"
+	    android:padding="10dp"
+	    android:text="@string/Developers"
+	    android:textAppearance="?android:attr/textAppearanceSmall"
+	    android:textStyle="italic" />
+
+</RelativeLayout>
+	

@@ -1,0 +1,535 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+        <RelativeLayout 
+		        android:layout_centerHorizontal="true"
+        		android:gravity="center_horizontal" 
+		        android:id="@+id/titlebar"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content" 
+		        android:background="@drawable/border_layout1">
+
+		        <ImageView
+		            android:id="@+id/logo"
+		            android:layout_width="40dp"
+		            android:layout_height="40dp"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:src="@drawable/logo_mini" 
+		            android:scaleType="fitXY"/>
+		        
+		        <ImageButton 
+		            android:id="@+id/home"
+		            android:layout_width="30dp"
+		            android:layout_height="30dp"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="5dp"
+		            android:background="@null"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/icon_home"/>
+		        
+		        <ImageButton 
+		            android:id="@+id/institutes"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_toLeftOf="@+id/home"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="5dp"
+		            android:background="@null"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/icon_institutes"/>
+		        
+		        <ImageButton 
+		            android:id="@+id/back"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_toLeftOf="@+id/institutes"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="5dp"
+		            android:background="@null"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/icon_back"/>
+		        
+		</RelativeLayout>
+    
+    <ScrollView 
+	    android:padding="10dp"
+        android:layout_below="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+	    <LinearLayout
+	        android:orientation="vertical"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" >
+	
+		    <RelativeLayout 
+		        android:id="@+id/course1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="left" 
+		        android:paddingBottom="5dp"
+		        android:background="@drawable/border_layout1">
+		        
+		        <TextView
+		            android:id="@+id/head"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:text="Head 1 - Ethics" />
+		        		        
+		       <ImageButton 
+		            android:id="@+id/read_p1"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_toLeftOf="@+id/download_p1"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:background="@null"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/icon_pdf"/>
+		        
+		        <ImageButton 
+		            android:id="@+id/download_p1"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:background="@null"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/icon_download"/>
+		        
+		        </RelativeLayout>
+		        
+		    <RelativeLayout 
+		        android:id="@+id/course2"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="left" 
+		        android:layout_marginTop="5dp"
+		        android:paddingBottom="5dp"
+		        android:background="@drawable/border_layout1">
+
+		        <TextView
+		            android:id="@+id/head2"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:text="Head 2 - Accounts" />
+		        
+		       <ImageButton 
+		            android:id="@+id/read_p2"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_toLeftOf="@+id/download_p2"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:background="@null"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/icon_pdf"/>
+		        
+		        <ImageButton 
+		            android:id="@+id/download_p2"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:background="@null"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/icon_download"/>
+		        
+		    </RelativeLayout>
+		        
+		    <RelativeLayout 
+		        android:id="@+id/course3"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="left" 
+		        android:layout_marginTop="5dp"
+		        android:paddingBottom="5dp"
+		        android:background="@drawable/border_layout1">
+
+		        <TextView
+		            android:id="@+id/head3"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:text="Head 3 - Conveyancing" />
+		        
+		       <ImageButton 
+		            android:id="@+id/read_p3"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_toLeftOf="@+id/download_p3"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:background="@null"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/icon_pdf"/>
+		        
+		        <ImageButton 
+		            android:id="@+id/download_p3"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:background="@null"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/icon_download"/>
+		        
+		    </RelativeLayout>
+		        
+		    <RelativeLayout 
+		        android:id="@+id/course4"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="left" 
+		        android:layout_marginTop="5dp"
+		        android:paddingBottom="5dp"
+		        android:background="@drawable/border_layout1">
+
+		        <TextView
+		            android:id="@+id/head4"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:text="Head 4 - Probate &amp; Succession" />
+		        
+		       <ImageButton 
+		            android:id="@+id/read_p4"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_toLeftOf="@+id/download_p4"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:background="@null"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/icon_pdf"/>
+		        
+		        <ImageButton 
+		            android:id="@+id/download_p4"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:background="@null"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/icon_download"/>
+		        
+		    </RelativeLayout>
+		        
+		    <RelativeLayout 
+		        android:id="@+id/course5"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="left" 
+		        android:layout_marginTop="5dp"
+		        android:paddingBottom="5dp"
+		        android:background="@drawable/border_layout1">
+
+		        <TextView
+		            android:id="@+id/head5"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:text="Head 5 - Commercial Transaction" />
+		        
+		       <ImageButton 
+		            android:id="@+id/read_p5"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_toLeftOf="@+id/download_p5"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:background="@null"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/icon_pdf"/>
+		        
+		        <ImageButton 
+		            android:id="@+id/download_p5"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:background="@null"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/icon_download"/>
+		        
+		    </RelativeLayout>
+		        
+		    <RelativeLayout 
+		        android:id="@+id/course6"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="left" 
+		        android:layout_marginTop="5dp"
+		        android:paddingBottom="5dp"
+		        android:background="@drawable/border_layout1">
+
+		        <TextView
+		            android:id="@+id/head6"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:text="Head 6 - Company Law &amp; Procedure" />
+		        
+		       <ImageButton 
+		            android:id="@+id/read_p6"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_toLeftOf="@+id/download_p6"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:background="@null"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/icon_pdf"/>
+		        
+		        <ImageButton 
+		            android:id="@+id/download_p6"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:background="@null"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/icon_download"/>
+		        
+		        </RelativeLayout>
+		        
+		     <RelativeLayout 
+		        android:id="@+id/course7a"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="left" 
+		        android:layout_marginTop="5dp"
+		        android:paddingBottom="5dp"
+		        android:background="@drawable/border_layout1">
+
+		        <TextView
+		            android:id="@+id/head7"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:text="Head 7 / 1 - High Court Civil Proceedure" />
+		        
+		       <ImageButton 
+		            android:id="@+id/read_p7a"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_toLeftOf="@+id/download_p7a"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:background="@null"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/icon_pdf"/>
+		        
+		        <ImageButton 
+		            android:id="@+id/download_p7a"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:background="@null"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/icon_download"/>
+		        
+		        </RelativeLayout>
+		        
+		     <RelativeLayout 
+		        android:id="@+id/course7b"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="left" 
+		        android:layout_marginTop="5dp"
+		        android:paddingBottom="5dp"
+		        android:background="@drawable/border_layout1">
+
+		        <TextView
+		            android:id="@+id/head7b"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:text="Head 7 / 2 - Subordinate Court Civil Proceedure" />
+		        
+		       <ImageButton 
+		            android:id="@+id/read_p7b"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_toLeftOf="@+id/download_p7b"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:background="@null"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/icon_pdf"/>
+		        
+		        <ImageButton 
+		            android:id="@+id/download_p7b"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:background="@null"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/icon_download"/>
+		        
+		        </RelativeLayout>
+		        
+		    <RelativeLayout 
+		        android:id="@+id/course8"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="left" 
+		        android:layout_marginTop="5dp"
+		        android:paddingBottom="5dp"
+		        android:background="@drawable/border_layout1">
+
+		        <TextView
+		            android:id="@+id/head8"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:text="Head 8 - Domestic Relations" />
+		        
+		       <ImageButton 
+		            android:id="@+id/read_p8"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_toLeftOf="@+id/download_p8"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:background="@null"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/icon_pdf"/>
+		        
+		        <ImageButton 
+		            android:id="@+id/download_p8"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:background="@null"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/icon_download"/>
+		        
+		        </RelativeLayout>
+		        
+		    <RelativeLayout 
+		        android:id="@+id/course9"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="left" 
+		        android:layout_marginTop="5dp"
+		        android:paddingBottom="5dp"
+		        android:background="@drawable/border_layout1">
+
+		        <TextView
+		            android:id="@+id/head9"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:text="Head 9 - Criminal Procedure" />
+		        
+		       <ImageButton 
+		            android:id="@+id/read_p9"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_toLeftOf="@+id/download_p9"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:background="@null"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/icon_pdf"/>
+		        
+		        <ImageButton 
+		            android:id="@+id/download_p9"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:background="@null"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/icon_download"/>
+		        
+		        </RelativeLayout>
+		        
+		    <RelativeLayout 
+		        android:id="@+id/course10"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="left" 
+		        android:layout_marginTop="5dp"
+		        android:paddingBottom="5dp"
+		        android:background="@drawable/border_layout1">
+
+		        <TextView
+		            android:id="@+id/head10"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:text="Head 10 - Evidence" />
+		        
+		       <ImageButton 
+		            android:id="@+id/read_p10"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_toLeftOf="@+id/download_p10"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:background="@null"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/icon_pdf"/>
+		        
+		        <ImageButton 
+		            android:id="@+id/download_p10"
+		            android:layout_width="20dp"
+		            android:layout_height="20dp"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="2dp"
+		            android:background="@null"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/icon_download"/>
+		        
+		        </RelativeLayout>
+		        
+		</LinearLayout>
+	
+	</ScrollView>
+    
+</RelativeLayout>
